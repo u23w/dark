@@ -1,0 +1,451 @@
+body {
+  background-color: rgba(1, 5, 0, 1);
+  padding: 0px;
+  margin: 0px;
+}
+
+.op{
+  display: flex;
+  justify-content: space-between;
+}
+.ok{
+  color: #FFFFFF;
+  height: 20px;
+  padding:0px;
+  margin: 0px;
+  background: linear-gradient(#00B9FF,#CF00FF);
+  border-radius: 4px;
+}
+
+.mlp{
+  color: #FFFFFF;
+  background: linear-gradient(#00B9FF,#CF00FF);
+  border-radius: 8px;
+}
+.iof{
+  margin: 22px;
+  justify-content: space-between;
+}
+fieldset{
+  border-color: #3445FF;
+  border-radius: 9px;
+  border-width:2px;
+  width: 55vh;
+}
+.imgh{
+  border-radius: 30px;
+}
+.igh{
+  border-radius: 30px;
+  margin: 5px;
+}
+.foy{
+  padding-left: 20px;
+  padding-top: 28px;
+  font-weight: bold;
+}
+hr{
+  border-color: #F70000;
+  border-radius: 30px;
+}
+.foll{
+  margin: 10px;
+  padding-left: 100px
+  }
+.xcv{
+  border-radius: 30px;
+  background: linear-gradient(#F70000, #00E9F7);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.follow{
+  width: 50px;
+}
+.button-9 {
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: #405cf5;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .1) 0 2px 5px 0, rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+  font-size: 100%;
+  height: 30px;
+  line-height: 1.15;
+  margin: 12px 0 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all .2s, box-shadow .08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+}
+
+.button-9:disabled {
+  cursor: default;
+}
+
+.button-9:focus {
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+.pos{
+  border-radius: 6px;
+}
+.love-heart:before,#switch {
+ display: none;
+}
+
+.love-heart, .love-heart::after {
+ border-color: hsl(231deg 28% 86%);
+ border: 1px solid;
+ border-top-left-radius: 100px;
+ border-top-right-radius: 100px;
+ width: 10px;
+ height: 8px;
+ border-bottom: 0
+}
+
+.round {
+ position: absolute;
+ z-index: 1;
+ width: 8px;
+ height: 8px;
+ background: hsl(0deg 0% 100%);
+ box-shadow: rgb(0 0 0 / 24%) 0px 0px 4px 0px;
+ border-radius: 100%;
+ left: 0px;
+ bottom: -1px;
+ transition: all .5s ease;
+ animation: check-animation2 .5s forwards;
+}
+
+input:checked + label .round {
+ transform: translate(0px, 0px);
+ animation: check-animation .5s forwards;
+ background-color: hsl(0deg 0% 100%);
+}
+
+@keyframes check-animation {
+ 0% {
+  transform: translate(0px, 0px);
+ }
+
+ 50% {
+  transform: translate(0px, 7px);
+ }
+
+ 100% {
+  transform: translate(7px, 7px);
+ }
+}
+
+@keyframes check-animation2 {
+ 0% {
+  transform: translate(7px, 7px);
+ }
+
+ 50% {
+  transform: translate(0px, 7px);
+ }
+
+ 100% {
+  transform: translate(0px, 0px);
+ }
+}
+
+.love-heart {
+ box-sizing: border-box;
+ position: relative;
+ transform: rotate(-45deg) translate(-50%, -33px) scale(4);
+ display: block;
+ border-color: hsl(231deg 28% 86%);
+ cursor: pointer;
+ top: 0;
+}
+
+input:checked + .love-heart, input:checked + .love-heart::after, input:checked + .love-heart .bottom {
+ border-color: hsl(347deg 81% 61%);
+ box-shadow: inset 6px -5px 0px 2px hsl(347deg 99% 72%);
+}
+
+.love-heart::after, .love-heart .bottom {
+ content: "";
+ display: block;
+ box-sizing: border-box;
+ position: absolute;
+ border-color: hsl(231deg 28% 86%);
+}
+
+.love-heart::after {
+ right: -9px;
+ transform: rotate(90deg);
+ top: 7px;
+}
+
+.love-heart .bottom {
+ width: 11px;
+ height: 11px;
+ border-left: 1px solid;
+ border-bottom: 1px solid;
+ border-color: hsl(231deg 28% 86%);
+ left: -1px;
+ top: 5px;
+ border-radius: 0px 0px 0px 5px;
+}
+/* From uiverse.io by @bhaveshxrawat */
+.card {
+  width: 190px;
+  height: 254px;
+  background: #07182E;
+  position: relative;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.card h2 {
+  z-index: 1;
+  color: white;
+  font-size: 2em;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+  height: 130%;
+  animation: rotBGimg 3s linear infinite;
+  transition: all 0.2s linear;
+}
+
+@keyframes rotBGimg {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  background: #07182E;
+  ;
+  inset: 5px;
+  border-radius: 15px;
+}  
+/* .card:hover:before {
+  background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
+  animation: rotBGimg 3.5s linear infinite;
+} */
+/* From uiverse.io by @adamgiebl */
+button {
+  --green: #1BFD9C;
+  font-size: 15px;
+  padding: 0.7em 2.7em;
+  letter-spacing: 0.06em;
+  position: relative;
+  font-family: inherit;
+  border-radius: 0.6em;
+  overflow: hidden;
+  transition: all 0.3s;
+  line-height: 1.4em;
+  border: 2px solid var(--green);
+  background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%, transparent 60%, rgba(27, 253, 156, 0.1) 100%);
+  color: var(--green);
+  box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+}
+
+button:hover {
+  color: #82ffc9;
+  box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.6), 0 0 9px 3px rgba(27, 253, 156, 0.2);
+}
+
+button:before {
+  content: "";
+  position: absolute;
+  left: -4em;
+  width: 4em;
+  height: 100%;
+  top: 0;
+  transition: transform .4s ease-in-out;
+  background: linear-gradient(to right, transparent 1%, rgba(27, 253, 156, 0.1) 40%, rgba(27, 253, 156, 0.1) 60%, transparent 100%);
+}
+
+button:hover:before {
+  transform: translateX(15em);
+}
+.bui{
+  display: flex;
+  justify-content: space-between;
+}
+/* From uiverse.io by @mobinkakei */
+.loader {
+  --path: #2f3545;
+  --dot: #5628ee;
+  --duration: 3s;
+  width: 44px;
+  height: 44px;
+  position: relative;
+}
+
+.loader:before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  position: absolute;
+  display: block;
+  background: var(--dot);
+  top: 37px;
+  left: 19px;
+  transform: translate(-18px, -18px);
+  animation: dotRect var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+}
+
+.loader svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.loader svg rect, .loader svg polygon, .loader svg circle {
+  fill: none;
+  stroke: var(--path);
+  stroke-width: 10px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.loader svg polygon {
+  stroke-dasharray: 145 76 145 76;
+  stroke-dashoffset: 0;
+  animation: pathTriangle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+}
+
+.loader svg rect {
+  stroke-dasharray: 192 64 192 64;
+  stroke-dashoffset: 0;
+  animation: pathRect 3s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+}
+
+.loader svg circle {
+  stroke-dasharray: 150 50 150 50;
+  stroke-dashoffset: 75;
+  animation: pathCircle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+}
+
+.loader.triangle {
+  width: 48px;
+}
+
+.loader.triangle:before {
+  left: 21px;
+  transform: translate(-10px, -18px);
+  animation: dotTriangle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+}
+
+@keyframes pathTriangle {
+  33% {
+    stroke-dashoffset: 74;
+  }
+
+  66% {
+    stroke-dashoffset: 147;
+  }
+
+  100% {
+    stroke-dashoffset: 221;
+  }
+}
+
+@keyframes dotTriangle {
+  33% {
+    transform: translate(0, 0);
+  }
+
+  66% {
+    transform: translate(10px, -18px);
+  }
+
+  100% {
+    transform: translate(-10px, -18px);
+  }
+}
+
+@keyframes pathRect {
+  25% {
+    stroke-dashoffset: 64;
+  }
+
+  50% {
+    stroke-dashoffset: 128;
+  }
+
+  75% {
+    stroke-dashoffset: 192;
+  }
+
+  100% {
+    stroke-dashoffset: 256;
+  }
+}
+
+@keyframes dotRect {
+  25% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(18px, -18px);
+  }
+
+  75% {
+    transform: translate(0, -36px);
+  }
+
+  100% {
+    transform: translate(-18px, -18px);
+  }
+}
+
+@keyframes pathCircle {
+  25% {
+    stroke-dashoffset: 125;
+  }
+
+  50% {
+    stroke-dashoffset: 175;
+  }
+
+  75% {
+    stroke-dashoffset: 225;
+  }
+
+  100% {
+    stroke-dashoffset: 275;
+  }
+}
+
+.loader {
+  display: inline-block;
+  margin: 0 16px;
+}
+
+ 
